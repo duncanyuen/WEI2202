@@ -1,0 +1,46 @@
+31/10/2022 -- 22:15:02 - <Notice> - This is Suricata version 6.0.8 RELEASE running in SYSTEM mode
+31/10/2022 -- 22:15:02 - <Info> - CPUs/cores online: 8
+31/10/2022 -- 22:15:02 - <Warning> - [ERRCODE: SC_ERR_CONF_YAML_ERROR(242)] - App-Layer protocol sip enable status not set, so enabling by default. This behavior will change in Suricata 7, so please update your config. See ticket #4744 for more details.
+31/10/2022 -- 22:15:02 - <Warning> - [ERRCODE: SC_ERR_CONF_YAML_ERROR(242)] - App-Layer protocol mqtt enable status not set, so enabling by default. This behavior will change in Suricata 7, so please update your config. See ticket #4744 for more details.
+31/10/2022 -- 22:15:02 - <Warning> - [ERRCODE: SC_ERR_CONF_YAML_ERROR(242)] - App-Layer protocol rdp enable status not set, so enabling by default. This behavior will change in Suricata 7, so please update your config. See ticket #4744 for more details.
+31/10/2022 -- 22:15:02 - <Info> - Found an MTU of 1500 for 'wlan0'
+31/10/2022 -- 22:15:02 - <Info> - Found an MTU of 1500 for 'wlan0'
+31/10/2022 -- 22:15:02 - <Info> - fast output device (regular) initialized: fast.log
+31/10/2022 -- 22:15:02 - <Info> - eve-log output device (regular) initialized: eve.json
+31/10/2022 -- 22:15:02 - <Info> - stats output device (regular) initialized: stats.log
+31/10/2022 -- 22:15:02 - <Warning> - [ERRCODE: SC_ERR_NO_RULES(42)] - No rule files match the pattern /etc/suricata/rules/suricata.rules
+31/10/2022 -- 22:15:02 - <Info> - 2 rule files processed. 49 rules successfully loaded, 0 rules failed
+31/10/2022 -- 22:15:02 - <Info> - Threshold config parsed: 0 rule(s) found
+31/10/2022 -- 22:15:02 - <Info> - 49 signatures processed. 0 are IP-only rules, 0 are inspecting packet payload, 49 inspect application layer, 0 are decoder event only
+31/10/2022 -- 22:15:02 - <Error> - [ERRCODE: SC_ERR_AFP_CREATE(190)] - Couldn't create a AF_PACKET socket, error Operation not permitted
+31/10/2022 -- 22:15:02 - <Info> - Going to use 1 thread(s)
+31/10/2022 -- 22:15:02 - <Info> - Using unix socket file '/var/run/suricata-command.socket'
+31/10/2022 -- 22:15:02 - <Warning> - [ERRCODE: SC_ERR_INITIALIZATION(45)] - Unix socket: UNIX socket bind(/var/run/suricata-command.socket) error: Address already in use
+31/10/2022 -- 22:15:02 - <Warning> - [ERRCODE: SC_ERR_INITIALIZATION(45)] - Unable to create unix command socket
+31/10/2022 -- 22:15:02 - <Notice> - all 1 packet processing threads, 4 management threads initialized, engine started.
+31/10/2022 -- 22:15:02 - <Error> - [ERRCODE: SC_ERR_AFP_CREATE(190)] - Couldn't create a AF_PACKET socket, error Operation not permitted
+31/10/2022 -- 22:15:02 - <Error> - [ERRCODE: SC_ERR_AFP_CREATE(190)] - Couldn't init AF_PACKET socket, fatal error
+31/10/2022 -- 22:15:02 - <Error> - [ERRCODE: SC_ERR_FATAL(171)] - thread W#01-wlan0 failed
+31/10/2022 -- 22:15:14 - <Notice> - This is Suricata version 6.0.8 RELEASE running in SYSTEM mode
+31/10/2022 -- 22:15:14 - <Info> - CPUs/cores online: 8
+31/10/2022 -- 22:15:14 - <Warning> - [ERRCODE: SC_ERR_CONF_YAML_ERROR(242)] - App-Layer protocol sip enable status not set, so enabling by default. This behavior will change in Suricata 7, so please update your config. See ticket #4744 for more details.
+31/10/2022 -- 22:15:14 - <Warning> - [ERRCODE: SC_ERR_CONF_YAML_ERROR(242)] - App-Layer protocol mqtt enable status not set, so enabling by default. This behavior will change in Suricata 7, so please update your config. See ticket #4744 for more details.
+31/10/2022 -- 22:15:14 - <Warning> - [ERRCODE: SC_ERR_CONF_YAML_ERROR(242)] - App-Layer protocol rdp enable status not set, so enabling by default. This behavior will change in Suricata 7, so please update your config. See ticket #4744 for more details.
+31/10/2022 -- 22:15:14 - <Info> - Found an MTU of 1500 for 'wlan0'
+31/10/2022 -- 22:15:14 - <Info> - Found an MTU of 1500 for 'wlan0'
+31/10/2022 -- 22:15:14 - <Info> - fast output device (regular) initialized: fast.log
+31/10/2022 -- 22:15:14 - <Info> - eve-log output device (regular) initialized: eve.json
+31/10/2022 -- 22:15:14 - <Info> - stats output device (regular) initialized: stats.log
+31/10/2022 -- 22:15:14 - <Warning> - [ERRCODE: SC_ERR_NO_RULES(42)] - No rule files match the pattern /etc/suricata/rules/suricata.rules
+31/10/2022 -- 22:15:14 - <Info> - 2 rule files processed. 49 rules successfully loaded, 0 rules failed
+31/10/2022 -- 22:15:14 - <Info> - Threshold config parsed: 0 rule(s) found
+31/10/2022 -- 22:15:14 - <Info> - 49 signatures processed. 0 are IP-only rules, 0 are inspecting packet payload, 49 inspect application layer, 0 are decoder event only
+31/10/2022 -- 22:15:14 - <Info> - Going to use 8 thread(s)
+31/10/2022 -- 22:15:14 - <Info> - Using unix socket file '/var/run/suricata-command.socket'
+31/10/2022 -- 22:15:14 - <Notice> - all 8 packet processing threads, 4 management threads initialized, engine started.
+31/10/2022 -- 22:15:15 - <Info> - All AFP capture threads are running.
+31/10/2022 -- 22:25:14 - <Notice> - Signal Received.  Stopping engine.
+31/10/2022 -- 22:25:15 - <Info> - time elapsed 600.124s
+31/10/2022 -- 22:25:16 - <Info> - Alerts: 0
+31/10/2022 -- 22:25:16 - <Info> - cleaning up signature grouping structure... complete
+31/10/2022 -- 22:25:16 - <Notice> - Stats for 'wlan0':  pkts: 1860, drop: 0 (0.00%), invalid chksum: 0
