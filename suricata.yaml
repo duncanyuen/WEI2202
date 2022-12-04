@@ -20,6 +20,7 @@ vars:
 
     EXTERNAL_NET: "!$HOME_NET"
     #EXTERNAL_NET: "any"
+    FYP_CLIENT_NET: "[10.42.0.0/16]" #ip of the raspberry pi
 
     HTTP_SERVERS: "$HOME_NET"
     SMTP_SERVERS: "$HOME_NET"
@@ -47,6 +48,7 @@ vars:
     GENEVE_PORTS: 6081
     VXLAN_PORTS: 4789
     TEREDO_PORTS: 3544
+    FYP_APP_PORTS: 5000
 
 ##
 ## Step 2: Select outputs to enable
@@ -55,7 +57,7 @@ vars:
 # The default logging directory.  Any log or output file will be
 # placed here if it's not specified with a full path name. This can be
 # overridden with the -l command line parameter.
-default-log-dir: /var/log/suricata/
+default-log-dir: /home/duncan/FYP/WEI2202/logs/
 
 # Global stats configuration
 stats:
@@ -115,7 +117,7 @@ outputs:
       #metadata: no
 
       # include the name of the input pcap file in pcap file processing mode
-      pcap-file: false
+      pcap-file: true
 
       # Community Flow ID
       # Adds a 'community_id' field to EVE records. These are meant to give
@@ -578,7 +580,7 @@ logging:
 
 # Linux high speed capture support
 af-packet:
-  - interface: eth0
+  - interface: wlan0
     # Number of receive threads. "auto" uses the number of cores
     #threads: auto
     # Default clusterid. AF_PACKET will load balance packets based on flow.
@@ -625,7 +627,7 @@ af-packet:
     # recv buffer size, increased value could improve performance
     # buffer-size: 32768
     # Set to yes to disable promiscuous mode
-    # disable-promisc: no
+    disable-promisc: no
     # Choose checksum verification mode for the interface. At the moment
     # of the capture, some packets may have an invalid checksum due to
     # the checksum computation being offloaded to the network card.
@@ -660,7 +662,7 @@ af-packet:
 pcap:
   - interface: eth0
     # On Linux, pcap will try to use mmap'ed capture and will use "buffer-size"
-    # as total memory used by the ring. So set this to something bigger
+    # as total memorya used by the ring. So set this to something bigger
     # than 1% of your bandwidth.
     #buffer-size: 16777216
     #bpf-filter: "tcp and port 25"
@@ -1856,10 +1858,11 @@ napatech:
 ## Configure Suricata to load Suricata-Update managed rules.
 ##
 
-default-rule-path: /etc/suricata/rules
+default-rule-path: /var/lib/suricata/rules
 
 rule-files:
   - suricata.rules
+  - /home/duncan/FYP/WEI2202/local.rules
 
 ##
 ## Auxiliary configuration files.
